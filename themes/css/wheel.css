@@ -1,0 +1,286 @@
+[game-tab="wheel"] {
+    margin-top: 0.5rem;
+    color: #155724;
+    background-color: #7ee2ff;
+    border-color: #ad4105;
+  }
+  
+  .luckywheel {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .luckywheel .luckywheel-background {
+    width: 100%;
+  }
+  
+  .luckywheel .luckywheel-background img {
+    width: 100%;
+  }
+  
+  .luckywheel #btn-spin {
+    position: absolute;
+    display: block;
+    width: 104px;
+    z-index: 5;
+    top: calc(50% - 65px);
+    left: calc(50% - 53px);
+  }
+  
+  .luckywheel-footer {
+    text-align: center;
+  }
+  
+  .luckywheel-footer .luckywheel-turn {
+    display: inline-block;
+  }
+  
+  #history-container {
+    width: 100%;
+    display: block;
+  }
+  
+  .cms-block {
+    flex-direction: column;
+  }
+  
+  .cms-block.right-column > div {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .btn-image {
+    width: 250px;
+  }
+  @media only screen and (max-width: 760px) {
+    .btn-image {
+      width: 200px;
+    }
+    .luckywheel {
+      width: 100%;
+    }
+    .luckywheel #btn-spin {
+      width: 73px;
+      top: calc(50% - 45px);
+      left: calc(50% - 40px);
+    }
+  }
+  
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+  
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  .wrapper {
+    height: 100%;
+  }
+  
+  .gift {
+    background: url("/lib/imgs/wheel/bg-gift.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+  }
+  
+  .wrapper-gift {
+    padding-top: 50px;
+  }
+  
+  .wrapper-gift .title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .wrapper-gift .tips {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .full-height {
+    height: 100vh;
+  }
+  
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .position-ref {
+    position: relative;
+  }
+  
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 44px;
+  }
+  
+  .links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+  
+  .threed {
+    font-family: "Dancing Script";
+    text-align: center;
+    font-weight: 400;
+    font-size: 3em;
+    color: white;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    text-shadow: -3px 0 rgba(0, 255, 255, 0.4), 3px 0 rgba(255, 0, 255, 0.4);
+    padding-top: 50px;
+  }
+  
+  . .the_wheel {
+    margin: auto;
+    width: 100%;
+  }
+  
+  #canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-top: 50px;
+    width: 80%;
+  }
+  
+  .spinner {
+    background-color: transparent;
+    border-radius: 26px !important;
+    background-image: url(/upload/files/btn-wheel-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 25%;
+    transform: translate(150%, 0%);
+  }
+  
+  div.power_controls {
+    border: none;
+    background-image: url(/upload/files/wheel-border-1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -43%);
+    width: 100%;
+    height: 130%;
+    cursor: pointer;
+  }
+  
+  div.power_controls a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  div.power_controls a:hover {
+    text-decoration: none;
+  }
+  
+  #rewardModal .model-content .model-body .reward-list ul {
+    list-style: none;
+  }
+  
+  .arrow-down {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #f00;
+  }

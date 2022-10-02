@@ -1,0 +1,525 @@
+:root {
+    --black: #1c1b1b;
+    --white: #fff;
+    --yellow: #f6d126;
+    --blue: #382d67;
+    --border-primary: 5px solid #f6d126;
+    --menu-color: #8b8b8b;
+    --menu-bg-color: #540032;
+}
+
+@font-face {
+    font-family: UVNVan_B;
+    src: url('./../fonts/uvn_van_bold/UVNVan_B.TTF');
+}
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: UVNVan_B;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 4px;
+    }
+}
+
+p {
+    line-height: 2;
+}
+
+table {
+    font-size: 2.4rem;
+}
+
+table.table th,
+table.table td {
+    vertical-align: middle;
+}
+
+.container {
+    max-width: 1125px;
+}
+
+.border-main {
+    border: var(--border-primary);
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(rgb(25, 25, 25), var(--black))  !important;
+    border: 2px solid var(--yellow) !important;
+    border-radius: 30px;
+    color: var(--yellow);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 3rem;
+    outline: none !important;
+    box-shadow: inset 0 0 10px 10px #000000, 0 0 5px 1px #000000 ;
+}
+
+
+.overlay {
+    background-color: rgba(81, 0, 55, 0.8);
+}
+
+
+.tab-name {
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    background-color: var(--black);
+    border-radius: 30px;
+    padding: 10px 15px;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 3.1rem;
+}
+
+#main {
+    min-height: 100vh;
+    background: #80004d;
+    position: relative;
+    padding-bottom: 28.6rem;
+    padding-top: 15px;
+}
+
+.bg-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 40%;
+    background: url('./../images/1.png') top right/contain no-repeat;
+
+}
+
+.bg-bottom {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url('./../images/2.png') left bottom/contain no-repeat;
+
+}
+
+#main-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--menu-bg-color);
+}
+
+#main-menu.nav-pills .nav-link {
+    color: var(--menu-color);
+    border-radius: unset;
+    border-top: 5px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+#main-menu.nav-pills .nav-link img {
+    width: 7.2rem;
+    height: 7.2rem;
+    margin-bottom: 2rem;
+}
+
+#main-menu.nav-pills .nav-link.active img {
+    filter: brightness(0) saturate(100%) invert(68%) sepia(99%) saturate(392%) hue-rotate(345deg) brightness(107%) contrast(110%);
+}
+
+#main-menu.nav-pills .nav-link.active,
+#main-menu.nav-pills .show>.nav-link {
+    color: var(--yellow);
+    background-color: transparent;
+    border-top: 5px solid var(--yellow);
+}
+
+#main-menu.nav-pills .nav-link.active svg {
+    fill: var(--yellow);
+}
+
+#main-menu .nav-item {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.tab-content {
+    position: relative;
+    z-index: 1;
+}
+
+.tab-content .note {
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#pills-home {
+    text-align: center;
+}
+
+#pills-home .logo {
+    height: 18.5rem;
+    padding: 2.4rem;
+    background-color: rgb(92, 5, 63, 0.3);
+    text-align: center;
+    margin: -15px -15px 0;
+}
+
+#pills-home header .logo img {
+    height: 100%;
+}
+
+#pills-home header .title {
+    color: #84fff8;
+    text-shadow: 1px 2px 5px #1f22e6, 0 0 10px #3e40ac, 0 0 5px #3e40ac, 0 2px 5px #3e40ac,0 2px 5px #07094d;
+    font-size: 5.5rem;
+    font-weight: bolder;
+}
+
+#pills-home header .sub-title {
+    color: #fce2f9;
+    text-shadow: 0 2px 5px #da008a, 0 0 5px #de2c9e,0 0 5px #de2c9e,0 0 5px #de2c9e,0 0 5px #de2c9e;
+    font-size: 3.4rem;
+    font-weight: bolder;
+}
+
+#pills-home .notify {
+    margin: 3.5rem 0 4rem;
+}
+
+#pills-home .notify .btn {
+    color: var(--white);
+    font-size: 2.6rem;
+    min-width: 23.5rem;
+}
+
+#pills-home #tab-type .nav {
+    justify-content: center;
+}
+
+#pills-home #tab-type .nav-item {
+    margin: 0 20px 20px 0;
+}
+
+#pills-home #tab-type .nav-link {
+    font-size: 3.2rem;
+    background-color: #382d67;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 0 1px #7fe1e1;
+    font-weight: bolder;
+    color: var(--white);
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+}
+
+#pills-home #tab-type .nav-link.active {
+    color: var(--yellow);
+    box-shadow: 0 2px 0 1px var(--yellow);
+}
+
+#pills-home #tab-type .tab-content .tab-pane {}
+
+#pills-home .tutorial {
+    padding: 10px 0;
+    margin-top: 6rem;
+}
+
+#pills-home .tutorial .title {
+    text-align: center;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+#pills-home .tutorial .intro {
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 0 25px;
+}
+
+#pills-home .tutorial table thead th {
+    border: 1px solid var(--black);
+    font-weight: bolder;
+}
+
+#pills-home .tutorial table td:not(:last-child) {
+    border-right: 2px solid var(--yellow);
+    font-weight: bolder;
+}
+
+#pills-home .tutorial table thead {
+    background-color: var(--yellow);
+}
+
+#pills-home .tutorial table tbody tr {
+    color: var(--yellow);
+    font-weight: 500;
+}
+
+#pills-home .tutorial table .phone {
+    white-space: nowrap;
+}
+#pills-home .tutorial table .phone i {
+    color: var(--black);
+    background-color: var(--yellow);
+    border-radius: 5px;
+    padding: 0.5rem 0.6rem;
+    font-size: 1.5rem;
+}
+
+#pills-home .tutorial table tbody tr .full {
+    color: red;
+}
+
+#pills-home .tutorial-2 .title {
+    text-align: center;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+#pills-home .tutorial-2 {
+    margin-top: 5rem;
+}
+
+#pills-home .tutorial-2 .table-money {
+    padding: 3rem 0;
+}
+
+#pills-home .tutorial-2 .table-money table tr:not(:last-child) {
+    border-bottom: 3px solid var(--yellow);
+}
+
+#pills-home .tutorial-2 .table-money table td:not(:last-child),
+#pills-home .tutorial-2 .table-money table th:not(:last-child) {
+    border-right: 2px solid var(--yellow);
+}
+
+#pills-home .tutorial-2 .title span {
+    color: #fff;
+}
+
+#pills-home .tutorial-2 .intro {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 25px;
+}
+
+#pills-home .tutorial-2 .note {
+    text-align: left;
+    margin-top: 3rem;
+}
+
+#pills-home .tutorial-2 .intro span {
+    color: var(--yellow);
+}
+
+#pills-home .tutorial-2 table thead th {
+    color: var(--yellow);
+    text-transform: uppercase;
+}
+
+#pills-home .tutorial-2 table tbody tr span {
+    display: inline-block;
+    color: var(--yellow);
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    background-color: var(--black);
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#pills-home .tutorial-2 table tbody td.money {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Gioi thieu */
+#pills-intro .content {
+    min-height: 70vw;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+/* Support */
+#pills-support .transaction {
+    margin-top: 75px;
+    padding: 15px 10px 20px;
+}
+
+#pills-support .transaction .check-code {
+    max-width: 788px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#pills-support .transaction .check-code h3 {
+    color: var(--yellow);
+    font-weight: 700;
+    font-size: 2.6rem;
+}
+
+#pills-support .transaction .check-code .note {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 2.4rem;
+    padding: 0 15px;
+}
+
+#pills-support .transaction .check-code label {
+    color: var(--yellow);
+    font-weight: 500;
+    display: block;
+    font-size: 2.2rem;
+}
+
+#pills-support .transaction .check-code input#code {
+    border-radius: 30px;
+    padding: 5px calc(2.4rem + 15px);
+    display: block;
+    width: 100%;
+    border: 1px solid var(--yellow);
+    outline: none;
+    background-color: rgba(60, 4, 50, 0.5);
+    height: 5.3rem;
+    font-size: 2.4rem;
+    color: var(--white);
+}
+#pills-support .transaction .check-code .form-group-icon {
+    position: relative;
+}
+#pills-support .transaction .check-code .form-group-icon i {
+    position: absolute;
+    color: var(--yellow);
+    font-size: 2.4rem;
+    left: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#pills-support .transaction .check-code input#code::placeholder {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+#pills-support .transaction .check-code .btn-check {
+    font-size: 2.4rem;
+    width: 20rem;
+    max-width:100%;
+}
+
+#pills-support .transaction .check-code .contact-admin {
+    margin-top: 22px;
+    font-size: 2.4rem;
+    width: 35rem;
+    max-width:100%;
+}
+
+#pills-support .contact {
+    margin-top: 35px;
+    padding: 30px 10px 24px;
+    background:  url(../images/money-bag.png)  bottom right/25.6rem 12.9rem no-repeat, linear-gradient(rgba(81, 0, 55, 0.8), rgba(81, 0, 55, 0.8));
+}
+
+#pills-support .contact .btn {
+    width: 43rem;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+/* Rank */
+#pills-rank {
+    text-align: center;
+}
+
+#pills-rank>img {
+    width: 30rem;
+    height: auto;
+    margin-top: 11.5rem;
+}
+
+#pills-rank>.top-rank {
+    margin-top: 7.4rem;
+    font-size: 7rem;
+    color: var(--yellow);
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 7.4rem;
+}
+
+#pills-rank table {
+    margin-bottom: 0;
+}
+
+#pills-rank table tr {
+    color: var(--yellow);
+}
+
+#pills-rank table tbody td {
+    font-size: 2.4rem;
+}
+
+#pills-rank table .top-1 {
+    background: url(../images/top-1.png) center/ contain no-repeat;
+    background-origin: content-box;
+}
+
+#pills-rank table .top-number {
+    font-size: 3.8rem;
+}
+
+#pills-rank table thead th {
+    border-bottom: 5px solid var(--yellow);
+}
+
+#pills-rank table th:not(:last-child),
+#pills-rank table td:not(:last-child) {
+    border-right: 5px solid var(--yellow);
+}
+
+#pills-rank table tbody {
+    font-weight: bolder;
+}
+
+#pills-rank .note {
+    margin-top: 4rem;
+}

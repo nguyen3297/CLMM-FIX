@@ -1,0 +1,9 @@
+VÀO .ENV chỉnh APP_URL bằng miền của bạn
+
+/// CÀI 1 SUB DOMAIN là admin.domain VD: admin.clmm.me
+/// CHỈNH DATABASE trong .env
+/// CRON 
+
+-- admin.domain/xu-ly-minigame
+
+-- admin.domain/xu-ly-pay

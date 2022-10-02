@@ -1,0 +1,11 @@
+Hướng Dẫn Fix Bug:
+Sau khi UP Src lên trên Hosting Các bạn làm theo hướng dẫn sau :
++/ click chuột phải vào file app sau đó bấm chuột phải vô hình ổ khóa ( password protect )
++/ sau đó đánh dấu tick vào Password protect this directory và bấm save sau 
++/ tiếp theo sau khi bấm save, bạn sẽ được dẫn đến chỗ tạo user name và password. ( Đoạn này các bạn tự tạo nhé )
+=> Cứ thế làm tương tự với cái file sau đây < resources, storage, vendor > 
+điều này là điều các bạn thực sự cần làm nếu muốn bảo mật dữ liệu an toàn nhé! xin đừng bỏ qua
+------------------------------------------------------------------------------------------
+Hướng dẫn config website:
+tạo 1 subdomain trỏ về cùng 1 mục với miền chính sau đó vào file .env config database 
+------------------------------------------------------------------------------------------
